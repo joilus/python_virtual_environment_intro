@@ -1,0 +1,55 @@
+Brugt denne guide:
+https://realpython.com/python-virtual-environments-a-primer/
+
+Lav en ny folder hvor som helst:
+mkdir python_virtual_environment_intro && python_virtual_environment_intro
+
+CD ind i folderen
+Lav et nyt virtual environment inde i folderen:
+python -m venv env
+
+Dette skaber en ny folder i folderen, kaldet "env".
+env-folderen har sub-folders "Scripts", "Lib" og "Include". 
+
+Du står stadig i folderen python_virtual_environment_intro
+In order to use this environment’s packages/resources in isolation, you need to “activate” it. To do this, just run the following (aktiver virtual env):
+env\Scripts\activate
+
+
+install pandas mens du har venv aktiveret
+nu afhænger venvet af pandas
+
+brug nu denne kommand til at generere requirements.txt filen:
+pip freeze --local > requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+STACKOVERFLOW SVAR: 
+
+
+
+
+1. Create a project folder
+2. Create a virtual environment in this folder
+3. Should it have a unique name or can all venv's be called env?
+4. Naviagate to new venv folder and activate
+5. Create a git repo using 'git init' and a .gitignore file
+6. Should this git repo have a unique name?
+7. Create all new files inside the venv folder
+
+
+1. Yes
+2. Yes. The creation of this folder is achieved via virtualenv or venv.
+3. You can always use 'env' as virtual environment folder. Generally speaking, each project folder has only one virtual environment set up, thus only one 'env' folder.
+4. You can activate it in the project folder. No need to go to the 'env' folder.
+5. Make sure you do the 'git init' under your project folder, not the 'env' folder.
+6. The git repo follows your project folder.
+7. No, all new files (except for the packages form pip install) are placed under the project folder. The 'env' folder is just for setting up virtual environment and installing packages. And like @dragon788 said, the 'env' folder is typically put in .gitignore.
