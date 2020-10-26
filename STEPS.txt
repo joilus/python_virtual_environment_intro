@@ -22,6 +22,22 @@ nu afhænger venvet af pandas
 brug nu denne kommand til at generere requirements.txt filen:
 pip freeze --local > requirements.txt
 
+Lav en .gitignore fil, hvor du nævner "env". Så bliver "env"-folderen ignoreret ved uploads.
+
+Initier nu git i folderen:
+git init
+
+Gør som normalt: git status, git add ., git commit -m "first commit"
+
+Dette er en local folder, og vi skal adde en remote. 
+git remote set-url origin https://joilus@github.com/joilus/python_virtual_environment_intro.git
+LAV NU DEN SAMME FOLDER PÅ GITHUB, VED IKKE OM MAN KAN UNDGÅ DETTE?
+
+NB: Vær sikker på du ikke er signet ind på en anden github account via windows credential manager
+
+git push origin master
+
+Hvis du ikke er signet ind på nogen github accounts via windows vil den nu spørge om username og passw. Derefter er der pushed. 
 
 
 
@@ -31,8 +47,7 @@ pip freeze --local > requirements.txt
 
 
 
-
-STACKOVERFLOW SVAR: 
+STACKOVERFLOW ANDRE SVAR: 
 
 
 
