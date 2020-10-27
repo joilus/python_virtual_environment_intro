@@ -30,6 +30,7 @@ git init
 Gør som normalt: git status, git add ., git commit -m "first commit"
 
 Dette er en local folder, og vi skal adde en remote. 
+git remote add origin https://github.com/joilus/python_virtual_environment_intro
 git remote set-url origin https://joilus@github.com/joilus/python_virtual_environment_intro.git
 LAV NU DEN SAMME FOLDER PÅ GITHUB, VED IKKE OM MAN KAN UNDGÅ DETTE?
 
